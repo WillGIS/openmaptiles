@@ -1,0 +1,21 @@
+layer:
+  id: "tj_daolu_xiangcundaolu"
+  description: |
+      Contains administrative boundaries (no maritime boundaries yet) as linestrings.
+      Until z7 [Natural Earth data](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/)
+      is used after which OSM boundaries ([`boundary=administrative`](http://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative)) are present from z8 to z14.
+      OSM data contains all [`admin_level`](http://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#admin_level)
+      but for most styles it makes sense to just style `admin_level=2` and `admin_level=4`.
+  fields:
+    name: |
+        name
+    grade:
+      description: |
+         areacode tjbuilding render_min_height
+      values: [0, 1]
+  buffer_size: 4
+  datasource:
+    geometry_field: geometry
+    query: (SELECT geometry, name, areacode, type FROM layer_tj_daolu_xiangcundaolu(!bbox!, z(!scale_denominator!))) AS t
+schema:
+  - ./tj_daolu_xiangcundaolu.sql

@@ -1,24 +1,28 @@
 tileset:
   layers:
-    - layers/water/water.yaml
-    - layers/waterway/waterway.yaml
-    - layers/landcover/landcover.yaml
-    - layers/landuse/landuse.yaml
-    - layers/mountain_peak/mountain_peak.yaml
-    - layers/park/park.yaml
-    - layers/boundary/boundary.yaml
-    - layers/aeroway/aeroway.yaml
-    - layers/transportation/transportation.yaml
-    - layers/building/building.yaml
-    - layers/water_name/water_name.yaml
-    - layers/transportation_name/transportation_name.yaml
-    - layers/place/place.yaml
-    - layers/housenumber/housenumber.yaml
-    - layers/poi/poi.yaml
-    - layers/aerodrome_label/aerodrome_label.yaml
-    - layers/tjbuilding/tjbuilding.yaml
+    - layers/tj_china_boundray_polygon/tj_china_boundray_polygon.yaml
     - layers/tj_lvhua_gongyuan_dizhigongyuan/tj_lvhua_gongyuan_dizhigongyuan.yaml
+    - layers/tj_lvhua_gongyuan_senlingongyuan/tj_lvhua_gongyuan_senlingongyuan.yaml
+    - layers/tj_fangwujianzhu/tj_fangwujianzhu.yaml
+    - layers/tj_peitao_xuexiao/tj_peitao_xuexiao.yaml
+    - layers/tj_peitao_yiyuan/tj_peitao_yiyuan.yaml
+    - layers/tj_shuixi_haimian/tj_shuixi_haimian.yaml
+    - layers/tj_shuixi_heliu/tj_shuixi_heliu.yaml
+    - layers/tj_shuixi_hupo/tj_shuixi_hupo.yaml
+    - layers/tj_shuixi_shuiku/tj_shuixi_shuiku.yaml
+    - layers/tj_yongdi_lindi/tj_yongdi_lindi.yaml
+    - layers/tj_yongdi_nongyongdi/tj_yongdi_nongyongdi.yaml
+    - layers/tj_bianjie_shengjie/tj_bianjie_shengjie.yaml
+    - layers/tj_bianjie_shijie/tj_bianjie_shijie.yaml
+    - layers/tj_bianjie_xianbianjie/tj_bianjie_xianbianjie.yaml
+    - layers/tj_bianjie_xiangzhenjie/tj_bianjie_xiangzhenjie.yaml
+    - layers/tj_china_boundray_line/tj_china_boundray_line.yaml
     - layers/tj_daolu_gonglu/tj_daolu_gonglu.yaml
+    - layers/tj_daolu_tielu/tj_daolu_tielu.yaml
+    - layers/tj_daolu_xiangcundaolu/tj_daolu_xiangcundaolu.yaml
+    - layers/tj_daolu_zadao/tj_daolu_zadao.yaml
+    - layers/tj_china_province/tj_china_province.yaml
+    - layers/poi/poi.yaml
   name: OpenMapTiles
   version: 3.3.0
   id: openmaptiles
