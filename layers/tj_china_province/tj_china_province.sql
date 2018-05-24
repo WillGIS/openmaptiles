@@ -1,8 +1,8 @@
 
 -- etldoc: fangwujianzhu -> tjbuilding_z13z14
-CREATE OR REPLACE VIEW tj_china_province_all AS (
+CREATE OR REPLACE VIEW china_province_all AS (
     SELECT *
-    FROM tj_china_province
+    FROM china_province
 );
 
 -- etldoc: layer_tjbuilding[shape=record fillcolor=lightpink, style="rounded,filled",
@@ -12,9 +12,9 @@ CREATE OR REPLACE FUNCTION layer_tj_china_province (bbox geometry, zoom_level in
 RETURNS TABLE(geometry geometry, name text , gbcode int) AS $$
     SELECT geometry, name, gbcode::int FROM (
         -- etldoc: fangwujianzhu -> layer_tjbuilding:z13
-        SELECT * FROM tj_china_province_all WHERE geometry && bbox AND zoom_level > 3 AND zoom_level < 13
+        SELECT * FROM china_province_all WHERE geometry && bbox AND zoom_level > 3 AND zoom_level < 13
         UNION ALL
         -- etldoc: fangwujianzhu -> layer_tjbuilding:z14
-        SELECT * FROM tj_china_province_all WHERE geometry && bbox AND zoom_level >= 13
+        SELECT * FROM china_province_all WHERE geometry && bbox AND zoom_level >= 13
     ) AS zoom_levels;
 $$ LANGUAGE SQL IMMUTABLE;

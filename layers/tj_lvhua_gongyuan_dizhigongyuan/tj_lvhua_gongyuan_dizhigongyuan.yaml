@@ -16,6 +16,6 @@ layer:
   buffer_size: 4
   datasource:
     geometry_field: geometry
-    query: (SELECT geometry, grade, name FROM tj_lvhua_gongyuan_dizhigongyuan(!bbox!, z(!scale_denominator!))) AS t
+    query: (SELECT geometry, grade, areacode, name FROM layer_tj_lvhua_gongyuan_dizhigongyuan(!bbox!, z(!scale_denominator!))) AS t
 schema:
   - ./tj_lvhua_gongyuan_dizhigongyuan.sql
