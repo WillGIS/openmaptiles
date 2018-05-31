@@ -1,6 +1,7 @@
 tileset:
   layers:
     - layers/tj_china_boundray_polygon/tj_china_boundray_polygon.yaml
+    - layers/water/water.yaml
     - layers/tj_lvhua_gongyuan_dizhigongyuan/tj_lvhua_gongyuan_dizhigongyuan.yaml
     - layers/tj_lvhua_gongyuan_senlingongyuan/tj_lvhua_gongyuan_senlingongyuan.yaml
     - layers/tj_fangwujianzhu/tj_fangwujianzhu.yaml
