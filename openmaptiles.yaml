@@ -6,7 +6,7 @@ tileset:
     - layers/tj_lvhua_gongyuan_senlingongyuan/tj_lvhua_gongyuan_senlingongyuan.yaml
     - layers/tj_fangwujianzhu/tj_fangwujianzhu.yaml
     - layers/tj_peitao_xuexiao/tj_peitao_xuexiao.yaml
-    - layers/tj_peitao_yiyuan/tj_peitao_xingzhengdanwei.yaml
+    - layers/tj_peitao_xingzhengdanwei/tj_peitao_xingzhengdanwei.yaml
     - layers/tj_peitao_yiyuan/tj_peitao_yiyuan.yaml
     - layers/tj_shuixi_haimian/tj_shuixi_haimian.yaml
     - layers/tj_shuixi_heliu/tj_shuixi_heliu.yaml
