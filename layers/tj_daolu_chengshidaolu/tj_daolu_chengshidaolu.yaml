@@ -18,4 +18,4 @@ layer:
     geometry_field: geometry
     query: (SELECT geometry, name, areacode, type FROM layer_tj_daolu_chengshidaolu(!bbox!, z(!scale_denominator!))) AS t
 schema:
-  - ./tj_daolu_xiangcundaolu.sql
+  - ./tj_daolu_chengshidaolu.sql

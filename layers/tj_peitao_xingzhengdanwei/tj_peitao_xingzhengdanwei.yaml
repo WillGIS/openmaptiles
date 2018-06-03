@@ -18,4 +18,4 @@ layer:
     geometry_field: geometry
     query: (SELECT geometry, name, areacode, featid, type FROM layer_tj_peitao_xingzhengdanwei(!bbox!, z(!scale_denominator!))) AS t
 schema:
-  - ./tj_peitao_xuexiao.sql
+  - ./tj_peitao_xingzhengdanwei.sql
