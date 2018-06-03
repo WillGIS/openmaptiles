@@ -6,7 +6,7 @@ CREATE OR REPLACE FUNCTION layer_tj_shuixi_shuiku (bbox geometry, zoom_level int
 RETURNS TABLE(geometry geometry, name text , areacode int, grade text) AS $$
     SELECT geometry, name, areacode::int, grade FROM (
         -- etldoc: fangwujianzhu -> layer_tjbuilding:z13
-        SELECT * FROM tj_shuixi_shuiku WHERE geometry && bbox AND zoom_level = 12
+        SELECT * FROM tj_shuixi_shuiku WHERE geometry && bbox AND zoom_level = 12 AND zoom_level >=8
         UNION ALL 
         -- etldoc: fangwujianzhu -> layer_tjbuilding:z13
         SELECT * FROM tj_shuixi_shuiku WHERE geometry && bbox AND zoom_level = 13

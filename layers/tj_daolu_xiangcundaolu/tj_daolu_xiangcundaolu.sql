@@ -6,7 +6,7 @@ CREATE OR REPLACE FUNCTION layer_tj_daolu_xiangcundaolu (bbox geometry, zoom_lev
 RETURNS TABLE(geometry geometry, name text , areacode int, type text) AS $$
     SELECT geometry, name, areacode::int, type FROM (
         -- etldoc: fangwujianzhu -> layer_tjbuilding:z13
-        SELECT * FROM tj_daolu_xiangcundaolu WHERE geometry && bbox AND zoom_level = 12
+        SELECT * FROM tj_daolu_xiangcundaolu WHERE geometry && bbox AND zoom_level = 12 AND zoom_level >=8
         UNION ALL 
         -- etldoc: fangwujianzhu -> layer_tjbuilding:z13
         SELECT * FROM tj_daolu_xiangcundaolu WHERE geometry && bbox AND zoom_level = 13

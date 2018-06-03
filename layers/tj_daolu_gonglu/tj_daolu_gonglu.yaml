@@ -16,6 +16,6 @@ layer:
   buffer_size: 4
   datasource:
     geometry_field: geometry
-    query: (SELECT geometry, name, road_type, areacode FROM layer_tj_daolu_gonglu(!bbox!, z(!scale_denominator!))) AS t
+    query: (SELECT geometry, name, type, areacode FROM layer_tj_daolu_gonglu(!bbox!, z(!scale_denominator!))) AS t
 schema:
   - ./tj_daolu_gonglu.sql
