@@ -20,7 +20,7 @@ tileset:
     - layers/tj_bianjie_xiangzhenjie/tj_bianjie_xiangzhenjie.yaml
     - layers/tj_china_boundray_line/tj_china_boundray_line.yaml
     - layers/tj_daolu_gonglu/tj_daolu_gonglu.yaml
-    - layers/tj_daolu_gonglu/tj_daolu_chengshidaolu.yaml
+    - layers/tj_daolu_chengshidaolu/tj_daolu_chengshidaolu.yaml
     - layers/tj_daolu_tielu/tj_daolu_tielu.yaml
     - layers/tj_daolu_xiangcundaolu/tj_daolu_xiangcundaolu.yaml
     - layers/tj_daolu_zadao/tj_daolu_zadao.yaml

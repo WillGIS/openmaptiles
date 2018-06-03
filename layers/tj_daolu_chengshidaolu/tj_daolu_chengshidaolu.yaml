@@ -1,5 +1,5 @@
 layer:
-  id: "tj_daolu_xiangcundaolu"
+  id: "tj_daolu_chengshidaolu"
   description: |
       Contains administrative boundaries (no maritime boundaries yet) as linestrings.
       Until z7 [Natural Earth data](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/)
