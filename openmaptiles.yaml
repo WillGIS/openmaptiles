@@ -26,6 +26,7 @@ tileset:
     - layers/tj_daolu_zadao/tj_daolu_zadao.yaml
     - layers/tj_china_province/tj_china_province.yaml
     - layers/poi/poi.yaml
+    - layers/tj_poi_airport/tj_poi_airport.yaml
   name: OpenMapTiles
   version: 3.3.0
   id: openmaptiles
