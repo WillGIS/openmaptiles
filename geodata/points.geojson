@@ -1,0 +1,19 @@
+{
+	"type": "FeatureCollection",
+	"features": [{
+		"type": "Feature",
+		"properties": {
+			"id": "001",
+			"heading": 0,
+			"size": 20,
+			"name": "天津滨海国际机场"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+				117.3527934,
+				39.1308398
+			]
+		}
+	}]
+}
