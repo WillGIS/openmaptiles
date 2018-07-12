@@ -131,6 +131,13 @@ you can limit the bounding box and zoom levels of what you want to generate (`do
 ```
 docker-compose run generate-vectortiles
 ```
+### MBUtil
+
+```
+./mb-util --image_format=pbf countries.mbtiles countries   
+gzip -d -r -S .pbf *  
+find . -type f -exec mv '{}' '{}'.pbf \; 
+```
 
 ## License
 
