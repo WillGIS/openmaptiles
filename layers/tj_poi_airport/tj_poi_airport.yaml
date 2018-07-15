@@ -16,6 +16,6 @@ layer:
   buffer_size: 4
   datasource:
     geometry_field: geometry
-    query: (SELECT geometry, typecode, name, objectid FROM layer_tj_poi_airport(!bbox!, z(!scale_denominator!))) AS t
+    query: (SELECT geometry, typecode, name, objectid, level_f, level_t FROM layer_tj_poi_airport(!bbox!, z(!scale_denominator!))) AS t
 schema:
   - ./tj_poi_airport.sql
