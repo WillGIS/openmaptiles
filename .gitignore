@@ -15,4 +15,3 @@ data/*
 wikidata/*
 
 # generated source files
-build/*
